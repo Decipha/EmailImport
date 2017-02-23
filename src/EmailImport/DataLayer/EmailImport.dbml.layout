@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EmailImport">
+  <DataContextMoniker Name="/EmailImportDataContext" />
+  <nestedChildShapes>
+    <classShape Id="92f0c596-f092-423b-874a-43dfcb8d858f" absoluteBounds="4.125, 2.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EmailImportDataContext/Setting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="558e6860-34f6-473a-bc11-58e26969b07a" absoluteBounds="4.1400000000000006, 3.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e831a525-0c16-4e77-90ed-39252cadd4ed" absoluteBounds="7.125, 2.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/EmailImportDataContext/BatchNumber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f441468-379b-4b53-bf99-9f1b57b616a5" absoluteBounds="7.1400000000000006, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1057f1d0-f845-4903-a30e-6fa72b4dd256" absoluteBounds="4.125, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/EmailImportDataContext/Mailbox" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3274b459-fd0d-43c9-98a5-ccdbd6daf8b3" absoluteBounds="4.14, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25099607-7435-4f7f-b0f6-729b42e155a5" absoluteBounds="7.125, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EmailImportDataContext/ErrorTranslation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16199978-c8c4-4d7f-89fd-b6839e60f3f2" absoluteBounds="7.14, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66e8466d-401a-45cd-bce0-43146528d115" absoluteBounds="1, 0.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/EmailImportDataContext/Email" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5fadde6-f11b-4d1e-b32e-3fc2d3a97a04" absoluteBounds="1.0150000000000001, 1.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EmailImport" Class="EmailImportDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=EmailImport;Integrated Security=True" SettingsObjectName="EmailImport.CCMasker.Properties.Settings" SettingsPropertyName="EmailImportConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Emails" Member="Emails">
+    <Type Name="Email">
+      <Column Name="EmailID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MessageID" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

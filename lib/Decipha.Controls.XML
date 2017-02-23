@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Decipha.Controls</name>
+    </assembly>
+    <members>
+        <member name="M:Decipha.Controls.AuthenticatedEventArgs.#ctor(System.Boolean,System.String,Decipha.Controls.DomainInfo,System.Collections.Generic.List{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Decipha.Controls.AuthenticatedEventArgs"/> class.
+            </summary>
+            <param name="authenticated">if set to <c>true</c> [authenticated].</param>
+            <param name="userName">Name of the user.</param>
+            <param name="domain">The domain.</param>
+            <param name="groups">The groups.</param>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticatedEventArgs.IsMemberOf(System.String[])">
+            <summary>
+            Determines whether [is member of] [the specified groups].
+            </summary>
+            <param name="groups">The groups.</param>
+            <returns>
+            	<c>true</c> if [is member of] [the specified groups]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticatedEventArgs.Authenticated">
+            <summary>
+            Gets a value indicating whether this <see cref="T:Decipha.Controls.AuthenticatedEventArgs"/> is authenticated.
+            </summary>
+            <value><c>true</c> if authenticated; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticatedEventArgs.UserName">
+            <summary>
+            Gets the name of the user.
+            </summary>
+            <value>The name of the user.</value>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticatedEventArgs.Domain">
+            <summary>
+            Gets the domain.
+            </summary>
+            <value>The domain.</value>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticatedEventArgs.Groups">
+            <summary>
+            Gets the groups.
+            </summary>
+            <value>The groups.</value>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticatedEventArgs.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>The message.</value>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Decipha.Controls.AuthenticationDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.AuthenticationDialog_Load(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Load event of the AuthenticationDialog control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.Authenticate">
+            <summary>
+            Shows the Authentication Dialog.
+            </summary>
+            <returns>DialogResult</returns>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.Authenticate(System.Windows.Forms.IWin32Window)">
+            <summary>
+            Shows the Authentication Dialog.
+            </summary>
+            <param name="owner">The owner.</param>
+            <returns>DialogResult</returns>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.IsMemberOf(System.String[])">
+            <summary>
+            Determines whether [is member of] [the specified groups].
+            </summary>
+            <param name="groups">The groups.</param>
+            <returns>
+            	<c>true</c> if [is member of] [the specified groups]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.buttonOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the buttonOK control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.buttonCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the buttonCancel control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.AuthenticateUser">
+            <summary>
+            Authenticates the user.
+            </summary>
+            <returns>
+            	<c>true</c> if the user is authenticated; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="F:Decipha.Controls.AuthenticationDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Decipha.Controls.AuthenticationDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticationDialog.IsAuthenticated">
+            <summary>
+            Gets a value indicating whether this instance is authenticated.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is authenticated; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticationDialog.UserName">
+            <summary>
+            Gets the name of the user.
+            </summary>
+            <value>The name of the user.</value>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticationDialog.Domain">
+            <summary>
+            Gets the domain.
+            </summary>
+            <value>The domain.</value>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticationDialog.Groups">
+            <summary>
+            Gets the groups.
+            </summary>
+            <value>The groups.</value>
+        </member>
+        <member name="P:Decipha.Controls.AuthenticationDialog.AuthenticationContext">
+            <summary>
+            Gets or sets the authentication context.
+            </summary>
+            <value>The authentication context.</value>
+        </member>
+        <member name="F:Decipha.Controls.ParameterDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Decipha.Controls.ParameterDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Decipha.Controls.ParameterDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.DateRangePeriod.Today">
+            <summary>
+            Today only.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.DateRangePeriod.Yesterday">
+            <summary>
+            Yeserday only.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.DateRangePeriod.ThisWeek">
+            <summary>
+            Current week from last Sunday to this Saturday.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.DateRangePeriod.LastWeek">
+            <summary>
+            Last week from previous Sunday to last Saturday.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.DateRangePeriod.ThisMonth">
+            <summary>
+            First day to the last day of the current month.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.DateRangePeriod.LastMonth">
+            <summary>
+            First day to the last day of last month.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.DateRangePeriod.WeekPrior">
+            <summary>
+            Last 7 days.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.DateRangePeriod.MonthPrior">
+            <summary>
+            Between today and a month ago.
+            </summary>
+        </member>
+        <member name="M:Decipha.Controls.DomainInfo.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:Decipha.Controls.DomainInfo.FriendlyName">
+            <summary>
+            Gets or sets the friendly name.
+            </summary>
+            <value>The friendly name.</value>
+        </member>
+        <member name="P:Decipha.Controls.DomainInfo.DnsName">
+            <summary>
+            Gets or sets the fully qualified DNS name.
+            </summary>
+            <value>The fully qualified DNS name.</value>
+        </member>
+        <member name="P:Decipha.Controls.DomainInfo.ContextType">
+            <summary>
+            Gets or sets the context type.
+            </summary>
+            <value>The contect type.</value>
+        </member>
+        <member name="T:Decipha.Controls.ListViewColumnSorter">
+            <summary>
+            This class is an implementation of the 'IComparer' interface.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.ListViewColumnSorter.ObjectCompare">
+            <summary>
+            Case insensitive comparer object
+            </summary>
+        </member>
+        <member name="M:Decipha.Controls.ListViewColumnSorter.#ctor">
+            <summary>
+            Class constructor.  Initializes various elements
+            </summary>
+        </member>
+        <member name="M:Decipha.Controls.ListViewColumnSorter.Compare(System.Object,System.Object)">
+            <summary>
+            This method is inherited from the IComparer interface.  It compares the two objects passed using a case insensitive comparison.
+            </summary>
+            <param name="x">First object to be compared</param>
+            <param name="y">Second object to be compared</param>
+            <returns>The result of the comparison. "0" if equal, negative if 'x' is less than 'y' and positive if 'x' is greater than 'y'</returns>
+        </member>
+        <member name="P:Decipha.Controls.ListViewColumnSorter.SortColumn">
+            <summary>
+            Gets or sets the number of the column to which to apply the sorting operation (Defaults to '0').
+            </summary>
+        </member>
+        <member name="P:Decipha.Controls.ListViewColumnSorter.Order">
+            <summary>
+            Gets or sets the order of sorting to apply (for example, 'Ascending' or 'Descending').
+            </summary>
+        </member>
+        <member name="P:Decipha.Controls.ListViewColumnSorter.CompareType">
+            <summary>
+            Gets or sets a value indicating the type of comparison to perform.
+            </summary>
+        </member>
+        <member name="F:Decipha.Controls.ProgressDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Decipha.Controls.ProgressDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Decipha.Controls.ProgressDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

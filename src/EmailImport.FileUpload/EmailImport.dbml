@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EmailImport" Class="EmailImportDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=EmailImport;Integrated Security=True" SettingsObjectName="EmailImport.FileUpload.Properties.Settings" SettingsPropertyName="EmailImportConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Mailboxes" Member="Mailboxes">
+    <Type Name="Mailbox">
+      <Column Name="MailboxGUID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProfileObject" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Settings" Member="Settings">
+    <Type Name="Setting">
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BatchNumbers" Member="BatchNumbers">
+    <Type Name="BatchNumber">
+      <Column Name="[Group]" Member="Group" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Emails" Member="Emails">
+    <Type Name="Email">
+      <Column Name="EmailID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MailboxGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MessageID" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="[From]" Member="From" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="DateSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateReceived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="MessageFilePath" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="BatchNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ProcessedCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Errors" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="InProgress" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
